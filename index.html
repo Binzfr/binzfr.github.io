@@ -1,275 +1,140 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Melih Gencler</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Importation des polices -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio Melih Gencler</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <section class="hero">
+            <nav class="navbar-container">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <ul class="navbar">
+                    <li class="active"><a href="#accueil">Accueil</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="heroContent">
+                <div class="heroTxt">
+                    <h2 class="bienvenueH2">Bienvenue ! 😊 Je suis</h2>
+                    <h1 class="mgH1">Melih Gencler</h1>
+                    <p class="moiP">Étudiant en 2ᵉ année de cycle préparatoire à CESI École d'Ingénieurs, passionné par l’informatique et le développement.</p>
 
-        @font-face {
-            font-family: 'Monocraft';
-            src: url('assets/Monocraft.ttf') format('truetype');
-        }
-
-        body {
-            font-family: 'Fustat', sans-serif;
-            font-weight: 600; /* Semi-Bold */
-        }
-
-        h1 {
-            font-weight: 800; /* Bold */
-        }
-
-        @keyframes growShrink {
-            0%, 100% {
-                transform: scale(1) rotate(15deg);
-            }
-            50% {
-                transform: scale(1.1) rotate(15deg);
-            }
-        }
-
-        .animate-grow-shrink {
-            animation: growShrink 2s infinite;
-        }
-
-        .gradient-overlay {
-            position: relative;
-        }
-
-        .gradient-overlay::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to left, transparent 0%, #180161 100%);
-        }
-
-        .encadrement {
-            position: relative;
-            border: 2px solid transparent;
-            padding: 20px;
-        }
-
-        .encadrement::before, .encadrement::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border: 4px solid orange; /* Bordures plus épaisses */
-        }
-
-        .encadrement::before {
-            top: 0;
-            left: 0;
-            border-right: none;
-            border-bottom: none;
-        }
-
-        .encadrement::after {
-            bottom: 0;
-            right: 0;
-            border-left: none;
-            border-top: none;
-        }
-
-    </style>
-</head>
-<body class="bg-[#0a0222] text-white">
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center px-8 py-4">
-        <div class="text-lg font-bold">MG</div>
-        <ul class="flex space-x-6">
-            <li><a href="#" class="relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-orange-500 after:bottom-0 after:left-0">Accueil</a></li>
-            <li><a href="#" class="hover:text-gray-400">Projets</a></li>
-            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-16">
-        <!-- Texte -->
-        <div class="max-w-2xl">
-            <p class="text-3xl md:text-[36px]">Bienvenue ! <span class="text-yellow-400">😊</span> Je suis</p>
-            <h1 class="text-[96px] mt-2">Melih Gencler</h1>
-            <p class="mt-4 text-2xl md:text-[40px] leading-relaxed">Étudiant en 2ᵉ année de cycle préparatoire à CESI École d'Ingénieurs, passionné par l’informatique et le développement.</p>
-            
-            <!-- Boutons -->
-            <div class="mt-6 flex items-center space-x-4 relative">
-                <a href="mailto:melihgenclerpro@gmail.com" class="bg-orange-500 text-white px-5 py-3 rounded-lg shadow-lg hover:bg-orange-600">Me contacter</a>
-                <a href="assets/CV_Melih_Gencler.pdf" download class="border border-white px-5 py-3 rounded-lg hover:bg-gray-800">Télécharger mon CV</a>
-                <p class="absolute -top-1 right-1 text-yellow-400 text-lg animate-grow-shrink" style="font-family: 'Monocraft', monospace;">En recherche d'alternance !</p>
-            </div>
-        </div>
-
-        <!-- Image -->
-        <div class="mt-10 md:mt-0">
-            <img src="assets/melih.png" alt="Melih Gencler" class="w-64 md:w-96 rounded-lg">
-        </div>
-    </section>
-
-    <!-- Section À propos de moi -->
-    <section class="bg-[#180161] px-8 md:px-16 py-16 text-center">
-        <h2 class="text-6xl font-bold mb-8" style="font-family: 'Fustat', sans-serif; font-weight: 800;">À propos de moi</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Compétences -->
-            <div class="space-y-8">
-                <div class="flex items-center space-x-4">
-                    <img src="assets/code.svg" alt="Code" class="w-20 h-20">
-                    <p class="text-3xl" style="font-family: 'Fustat', sans-serif; font-weight: 400;">Maîtrise des bases en C/C++, développement web (HTML, CSS, JavaScript) et Python.</p>
+                    <div class="buttonContainer">
+                    <button class="contactButton"><a href="mailto:contact@melihgencler.fr" class="contactButton">Me Contacter</a></button>
+                    <button class="downloadButton"><a href="assets/CV_Melih_Gencler.pdf" download class="">Télécharger mon CV</a></button>
+                    <p class="alternanceBadge">En recherche d'alternance !</p>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <img src="assets/crayon.svg" alt="Crayon" class="w-20 h-20">
-                    <p class="text-3xl" style="font-family: 'Fustat', sans-serif; font-weight: 400;">Utilisation de Figma et Webflow pour la création de sites web.</p>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <img src="assets/pacman.svg" alt="Pacman" class="w-20 h-20">
-                    <p class="text-3xl" style="font-family: 'Fustat', sans-serif; font-weight: 400;">Pratique de la musculation depuis 5 ans et apprentissage autodidacte du japonais.</p>
+                <div class="heroImg">
+                    <img src="assets/melih.png" alt="Melih Gencler">
                 </div>
             </div>
-            <!-- CV -->
-            <div class="flex justify-center">
-                <img src="assets/CV.png" alt="CV" class="w-64 md:w-96 rounded-lg">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Mes projets -->
-    <section class="bg-[#180161] px-8 md:px-16 py-16">
-        <h2 class="text-6xl font-bold mb-8 text-center" style="font-family: 'Fustat', sans-serif; font-weight: 800;">Mes projets</h2>
-        
-        <!-- Projet Cesi&Dragons -->
-        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <!-- Encadrement (1/3 de la page) -->
-            <div class="w-full md:w-1/3 h-[500px]">
-                <div class="encadrement h-full">
-                    <div class="text-white text-left p-8">
-                        <p class="text-2xl font-bold" style="font-family: 'Fustat', sans-serif; font-weight: 800;">
-                            Création d’un jeu RPG en C++ natif pour un projet scolaire, réalisé en une semaine en groupe de 4.
-                            <br><br>
-                            Système de création et changement de maps
-                            <br>
-                            Gestion de l’inventaire et des coffres
-                            <br>
-                            Combat contre différents ennemis, dont un boss
-                            <br>
-                            Choix de personnage avec plusieurs designs
-                        </p>
+        <section class="aboutSection" id="about">
+            <h1 class="titreH1">À propos de moi</h1>
+            <div class="aboutContent">
+                <div class="aboutText">
+                    <div class="textItem">
+                        <img src="assets/code.svg" alt="Code" class="itemImg">
+                        <p class="itemP">Maîtrise des bases en C/C++, développement web avec HTML, CSS, JavaScript, Vue.JS, Twig, PHP.</p>
+                    </div>
+                    <div class="textItem">
+                        <img src="assets/crayon.svg" alt="Crayon" class="itemImg">
+                        <p class="itemP">Utilisation de Figma et Webflow pour la création de sites web.</p>
+                    </div>
+                    <div class="textItem">
+                        <img src="assets/pacman.svg" alt="Pacman" class="itemImg">
+                        <p class="itemP">Pratique de la musculation depuis 5 ans et apprentissage autodidacte du japonais.</p>
                     </div>
                 </div>
+                <div class="cvImg">
+                    <a href="assets/CV_Melih_Gencler.pdf" target="_blank">
+                    <img src="assets/CV.png" alt="CV">
+                </div>  
             </div>
-            <!-- Image (2/3 de la page) -->
-            <div class="w-full md:w-2/3 h-[500px] relative">
-                <div class="gradient-overlay h-full">
-                    <img src="assets/cesidragon.png" alt="Cesi&Dragons" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <!-- Titre du projet en dessous de l'image -->
-                <p class="text-2xl font-bold underline decoration-orange-500 text-right mt-1" style="font-family: 'Fustat', sans-serif; font-weight: 800;">Cesi&Dragons</p>
-            </div>
-        </div>
+        </section>
 
-        <!-- Projet WorldWeatherWatcher -->
-        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <!-- Encadrement (1/3 de la page) -->
-            <div class="w-full md:w-1/3 h-[500px]">
-                <div class="encadrement h-full">
-                    <div class="text-white text-left p-8">
-                        <p class="text-2xl font-bold" style="font-family: 'Fustat', sans-serif; font-weight: 800;">
-                            Projet en groupe de 5 : conception d’une station météo portable. Réalisation d’une maquette physique
-                            <br><br>
-                            Optimisation du code pour s’adapter aux faibles ressources de la carte Arduino et aux capteurs
-                            <br>
-                            Déploiement du programme via un script Linux
-                        </p>
-                    </div>
+        <section class="projectSection" id="projets"> 
+            <h1 class="titreH1">Mes projets</h1>
+            <div class="projectContent">
+                <div class="projectText">
+                    <p class="projetP">Création d’un jeu RPG en C++ natif pour un projet scolaire, réalisé en une semaine en groupe de 4. Système de création et changement de maps
+                        Gestion de l’inventaire et des coffres
+                        Combat contre différents ennemis, dont un boss
+                        Choix de personnage avec plusieurs designs</p>
+                </div>
+                <div class="projectImg">
+                    <a href="https://github.com/Binzfr/Cesi-Dragons" target="_blank">
+                    <img class="imgportfolio" src="assets/cesidragon.png" alt="cesidragon">
+                    <h3 class="projectTitle">Cesi&Dragons</h3>
                 </div>
             </div>
-            <!-- Image (2/3 de la page) -->
-            <div class="w-full md:w-2/3 h-[500px] relative">
-                <div class="gradient-overlay h-full">
-                    <img src="assets/www.png" alt="WorldWeatherWatcher" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <!-- Titre du projet en dessous de l'image -->
-                <p class="text-2xl font-bold underline decoration-orange-500 text-right mt-1" style="font-family: 'Fustat', sans-serif; font-weight: 800;">WorldWeatherWatcher</p>
-            </div>
-        </div>
 
-        <!-- Projet La Forêt -->
-        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <!-- Encadrement (1/3 de la page) -->
-            <div class="w-full md:w-1/3 h-[500px]">
-                <div class="encadrement h-full">
-                    <div class="text-white text-left p-8">
-                        <p class="text-2xl font-bold" style="font-family: 'Fustat', sans-serif; font-weight: 800;">
-                            Projet personnel : création d’un site vitrine pour des amis. Réalisation d’un wireframe sur Figma
-                            <br><br>
-                            Conception et développement du site sur Webflow
-                            <br>
-                            Renforcement des compétences en design UX/UI et développement no-code
-                        </p>
-                    </div>
+            <div class="projectContent">
+                <div class="projectText">
+                    <p class="projetP">Projet en groupe de 5 : conception d’une station météo portable.Réalisation d’une maquette physique.
+                        Optimisation du code pour s’adapter aux faibles ressources de la carte Arduino et aux capteurs
+                        Déploiement du programme via un script Linux</p>
+                </div>
+                <div class="projectImg">
+                    <a href="https://github.com/Binzfr/WorldWeatherWatcher" target="_blank">
+                    <img class="imgportfolio" src="assets/www.png" alt="WorldWeatherWatcher">
+                    <h3 class="projectTitle">WorldWeatherWatcher</h3>
                 </div>
             </div>
-            <!-- Image (2/3 de la page) -->
-            <div class="w-full md:w-2/3 h-[500px] relative">
-                <div class="gradient-overlay h-full">
-                    <img src="assets/foret.png" alt="La Forêt" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <!-- Titre du projet en dessous de l'image -->
-                <p class="text-2xl font-bold underline decoration-orange-500 text-right mt-1" style="font-family: 'Fustat', sans-serif; font-weight: 800;">La Forêt</p>
-            </div>
-        </div>
 
-        <!-- Projet Web4All -->
-        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <!-- Encadrement (1/3 de la page) -->
-            <div class="w-full md:w-1/3 h-[500px]">
-                <div class="encadrement h-full">
-                    <div class="text-white text-left p-8">
-                        <p class="text-2xl font-bold" style="font-family: 'Fustat', sans-serif; font-weight: 800;">
-                            Projet scolaire en cours : développement d’une application web de recherche d’emploi. Création de comptes étudiants et entreprises
-                            <br><br>
-                            Recherche et publication d’offres
-                            <br>
-                            Respect des bonnes pratiques UX/UI et de la sécurité
-                        </p>
-                    </div>
+            <div class="projectContent">
+                <div class="projectText">
+                    <p class="projetP">Projet personnel : création d’un site vitrine pour des amis. Réalisation d’un wireframe sur Figma
+                        Conception et développement du site sur Webflow
+                        Renforcement des compétences en design UX/UI et développement no-code</p>
+                </div>
+                <div class="projectImg">
+                    <a href="https://laforetphilo.webflow.io/" target="_blank">
+                    <img class="imgportfolio" src="assets/foret.png" alt="LaForet">
+                    <h3 class="projectTitle">La Forêt</h3>
                 </div>
             </div>
-            <!-- Image (2/3 de la page) -->
-            <div class="w-full md:w-2/3 h-[500px] relative">
-                <div class="gradient-overlay h-full">
-                    <img src="assets/web4all.png" alt="Web4All" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <!-- Titre du projet en dessous de l'image -->
-                <p class="text-2xl font-bold underline decoration-orange-500 text-right mt-1" style="font-family: 'Fustat', sans-serif; font-weight: 800;">Web4All</p>
-            </div>
-        </div>
-    </section>
 
-<!-- Section Contact et Réseaux -->
-<section class="bg-[#180161] px-8 md:px-16 py-16 text-center">
-    <h2 class="text-6xl font-bold mb-16" style="font-family: 'Fustat', sans-serif; font-weight: 800;">Contact et Réseaux</h2>
-    <div class="flex justify-center space-x-32">
-        <!-- LinkedIn -->
-        <div>
-            <a href="https://www.linkedin.com/in/melih-gencler-6052792ab/" target="_blank">
-                <img src="assets/linkedin.svg" alt="LinkedIn" class="w-24 h-24 mx-auto">
-                <p class="text-2xl mt-4">LinkedIn</p>
-            </a>
-        </div>
-        <!-- GitHub -->
-        <div>
+            <div class="projectContent">
+                <div class="projectText">
+                    <p class="projetP">Projet scolaire : développement d’une application web de recherche d’emploi. Création de comptes étudiants et entreprises
+                        Recherche et publication d’offres
+                        Respect des bonnes pratiques UX/UI et de la sécurité</p>
+                </div>
+                <div class="projectImg">
+                    <a href="https://web4all.alwaysdata.net/" target="_blank">
+                    <img class="imgportfolio" src="assets/web4all.png" alt="Web4All">
+                    <h3 class="projectTitle">Web4All</h3>
+                </div>
+            </div>
+        </section>
+
+<section class="contactSection" id="contact">
+    <h1 class="titreH1">Contact et réseaux</h1>
+    <div class="contactDiv">
+        <div class="contactItem">
             <a href="https://github.com/Binzfr" target="_blank">
-                <img src="assets/github.svg" alt="GitHub" class="w-24 h-24 mx-auto">
-                <p class="text-2xl mt-4">Binzfr</p>
-            </a>
+            <img src="assets/github.svg" alt="github">
+            <p>Binzfr</p>
+        </div>
+        <div class="contactItem">
+            <a href="https://www.linkedin.com/in/melih-gencler-6052792ab/" target="_blank">
+            <img src="assets/linkedin.svg" alt="linkedin">
+            <p>Melih Gencler</p>
+        </div>
+        <div class="contactItem">
+            <a href="mailto:contact@melihgencler.fr">
+            <img src="assets/mail.svg" alt="mail" id="mailImg">
+            <p>contact@melihgencler.fr</p>
         </div>
     </div>
 </section>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "titre": "Cesi&Dragons",
+      "description": "Développement d'un jeu RPG en C++ natif dans le cadre d'un projet scolaire intensif d'une semaine. Réalisé en équipe de 4, le jeu intègre un système dynamique de création et navigation entre maps, une gestion complète d'inventaire et de coffres, ainsi qu'un système de combat contre différents ennemis incluant un boss. Les joueurs peuvent choisir parmi plusieurs designs de personnages.",
+      "image": "/assets/cesidragon.png",
+      "tags": ["C++", "Game Dev", "POO", "Design Patterns"],
+      "lien": "https://github.com/Binzfr/Cesi-Dragons"
+    },
+    {
+      "id": 2,
+      "titre": "WorldWeatherWatcher",
+      "description": "Conception et réalisation d'une station météo portable en équipe de 5. Le projet comprend la création d'une maquette physique fonctionnelle, l'optimisation rigoureuse du code pour maximiser les performances sur les ressources limitées de la carte Arduino, et l'intégration de plusieurs capteurs environnementaux. Développement d'un script Linux pour simplifier le déploiement du programme sur l'appareil.",
+      "image": "/assets/www.png",
+      "tags": ["Arduino", "C", "Linux", "IoT", "Capteurs"],
+      "lien": "https://github.com/Binzfr/WorldWeatherWatcher"
+    },
+    {
+      "id": 3,
+      "titre": "La Forêt",
+      "description": "Création complète d'un site vitrine professionnel pour des amis. Le projet a débuté par la conception d'un wireframe détaillé sur Figma, suivie du développement intégral sur Webflow. Cette réalisation m'a permis d'approfondir mes compétences en design UX/UI et en développement no-code, tout en livrant un produit final responsive, optimisé et parfaitement adapté aux besoins du client.",
+      "image": "/assets/foret.png",
+      "tags": ["Webflow", "Figma", "UX/UI", "No-Code", "Responsive"],
+      "lien": "https://laforetphilo.webflow.io/"
+    },
+    {
+      "id": 4,
+      "titre": "Web4all",
+      "description": "Conception et développement d'une application web complète de recherche d'emploi en équipe de 5 personnes. La plateforme offre un système de double profil pour étudiants et entreprises, un module sophistiqué de publication et consultation d'offres, ainsi qu'une gestion avancée des profils utilisateurs (CRUD). L'application implémente des fonctionnalités de recherche optimisée et respecte les standards modernes de sécurité web et d'expérience utilisateur.",
+      "image": "/assets/web4all.png",
+      "tags": ["PHP", "JavaScript", "MySQL", "UX/UI", "Sécurité Web"],
+      "lien": "https://web4all.alwaysdata.net/"
+    }
+  ]

@@ -7,6 +7,11 @@ const routes = [
     name: 'Accueil',
     component: AccueilView,
   },
+  {
+    path: '/formulaire',
+    name: 'Formulaire',
+    component: () => import('../views/FormulaireView.vue')
+  }
   // Tu pourras ajouter d'autres routes ici plus tard
 ]
 

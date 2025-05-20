@@ -55,21 +55,21 @@
         <v-row align="center" justify="space-between">
           <v-col cols="12" md="7">
             <div class="textItem">
-              <img src="/assets/code.svg" alt="Code" class="itemImg" />
+              <v-icon icon="md:code" size="36" class="itemIcon" style="margin-right:1rem;" />
               <p class="itemP">
-                Maîtrise des bases en C/C++, développement web (HTML, CSS, JavaScript) et Python.
+                Développement Web et Mobile avec Vue.JS, Typescript/Javascript, HTML, CSS, Twig . bases en Flutter, PHP, C++, C (Arduino), Python.
               </p>
             </div>
             <div class="textItem">
-              <img src="/assets/crayon.svg" alt="Crayon" class="itemImg" />
+              <v-icon icon="md:draw" size="36" class="itemIcon" style="margin-right:1rem;" />
               <p class="itemP">
-                Utilisation de Figma et Webflow pour la création de sites web.
+                Utilisation de Figma pour la création de maquettes statique de site Web et design. Bases en Webflow pour la création de sites web vitrine. 
               </p>
             </div>
             <div class="textItem">
-              <img src="/assets/pacman.svg" alt="Pacman" class="itemImg" />
+              <v-icon icon="md:golf_course" size="36" class="itemIcon" style="margin-right:1rem;" />
               <p class="itemP">
-                Pratique de la musculation depuis 5 ans et apprentissage autodidacte du japonais.
+                Pratique de la musculation depuis 5 ans et apprentissage autodidacte du japonais. Je suis curieux et aime m’informer ainsi qu’apprendre (Finance, musique, nouvelles technologies...) et jouer aux jeux vidéos (multijoueur ou solo).
               </p>
             </div>
           </v-col>

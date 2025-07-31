@@ -29,9 +29,6 @@
                   >
                     Télécharger mon CV
                   </Bouton>
-                  <span class="alternanceBadge">
-                    En recherche d'alternance !
-                  </span>
                 </div>
               </div>
             </div>
@@ -70,7 +67,7 @@
             <div class="textItem mb-12">
               <v-icon icon="md:golf_course" size="5rem" class="itemIcon mr-8" color="accent" />
               <p class="itemP text-h4">
-                Pratique de la musculation depuis 5 ans et apprentissage autodidacte du japonais. Je suis curieux et aime m'informer ainsi qu'apprendre (Finance, musique, nouvelles technologies...) et jouer aux jeux vidéos (multijoueur ou solo).
+                Pratique de la musculation depuis 5 ans. Je suis curieux et aime m'informer ainsi qu'apprendre (Finance, musique, nouvelles technologies...) et jouer aux jeux vidéo (multijoueur ou solo).
               </p>
             </div>
           </v-col>

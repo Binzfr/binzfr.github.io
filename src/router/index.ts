@@ -11,7 +11,12 @@ const routes = [
     path: '/formulaire',
     name: 'Formulaire',
     component: () => import('@/views/FormulaireView.vue')
-  }
+  },
+  {
+    path: '/film',
+    name: 'Jellyfin',
+    component: () => import('@/views/JellyfinRedirect.vue')
+  },
   // Tu pourras ajouter d'autres routes ici plus tard
 ]
 
